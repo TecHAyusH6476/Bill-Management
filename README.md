@@ -1,16 +1,15 @@
-# Bill Manager - React.js, Redux, Saga, Chart.js
-(by [@ombharatiya](https://www.linkedin.com/in/ombharatiya))
+# Bill Manager - React.js, Redux, Chart.js
+
 
 - - -
 
-### A demo app to illustrate various features of a react.js application:
 
-**Check the deployed app here : [Bill Insights](https://bill-insights.now.sh/).**
 
 - - -
 ## Problem Statement:
 
-Chinu owns a car wash business and needs help to manage various bills from his vendors. Need to build an application to help Chinu manage his monthly bills. The bill manager should show a bill dashboard (list of bills) with the total monthly billed amount.
+Adithya owns a car wash business and needs help to manage various bills from his vendors.
+Build an application to help Adithya manage his monthly bills.
 
 
 ## The app uses following libraries/packages for development, build and deployment:
@@ -26,11 +25,7 @@ Chinu owns a car wash business and needs help to manage various bills from his v
 - **[TypeScript](https://github.com/Microsoft/TypeScript)** - a superset of JavaScript programming language that compiles to clean JavaScript output.
 
 
-## Functional requirements:
 
-- The user must be able to manually add, edit and remove bills. (update the state locally)
-- The user must be able to filter bills by category. (category filter dropdown)
-- Draw a time-series chart of the monthly billing cycle.
 
 
 ## Screens:
@@ -53,21 +48,7 @@ Chinu owns a car wash business and needs help to manage various bills from his v
 ![List all Bills Screen](all-bills-list.PNG)
 
 
-## LocalStorage Data Storage
 
-We are storing the data in localstorage to persist data in case of page refresh.
-
-One bill object looks like following:
-
-```
-{
-"id": 1,
-"description": "Dominoes",
-"category": "FoodNDining",
-"amount": "430",
-"date": "01-02-2020"
-}
-```
 
 
 Here's a screenshot to show how local storage will look like:
@@ -76,33 +57,10 @@ Here's a screenshot to show how local storage will look like:
 ![localstorage](local-storage-data.PNG)
 
 
-## Docker to build and deploy
-
-to run the above app locally, you can simply run the command:
-
-
-### `docker-compose up --build`
-
-
-To create image run the command:
-
-### `docker build -t bill-insight`
-
-
-To run the built image, run the command:
-
-
-### `docker run -p 3000:3000 -it bill-insight -d`
-
-
-For more details about Docker and docker compose, check the [documentations](https://docs.docker.com/compose/).
-
-
-- - -
 
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -149,16 +107,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
----
-
-Thank you :)
-
-Copyright @ombharatiya
-
----
